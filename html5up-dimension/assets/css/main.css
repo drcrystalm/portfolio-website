@@ -1764,3 +1764,35 @@ body.is-article-visible #footer {
 body.is-preload #footer {
   opacity: 0;
 }
+#cm {
+  background-image: -webkit-linear-gradient(
+    left,
+    white 25%,
+    #fde071 37.5%,
+    #ef9671,
+    #996a6e 62.5%,
+    white 75%
+  );
+  background-image: linear-gradient(
+    90deg,
+    white 25%,
+    #fde071 37.5%,
+    #ef9671,
+    #996a6e 62.5%,
+    white 75%
+  );
+  background-position: right center;
+  background-size: 400% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: white;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  transition: color 200ms linear;
+}
+
+#cm:hover {
+  background-position: left center;
+  color: #ef9671;
+  transition: background-position 2000ms ease-out;
+}
